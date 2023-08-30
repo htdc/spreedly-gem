@@ -59,9 +59,9 @@ class VerifyTest < Test::Unit::TestCase
       [ './merchant_name_descriptor', 'TRain' ],
       [ './merchant_location_descriptor', 'British Colombia' ],
       [ './retain_on_success', 'true' ],
-      [ './continue_caching', 'true']
+      [ './continue_caching', 'true'],
+      [ './currency_code', 'usd']
   end
-
 
   private
   def verify_using(response)
@@ -77,7 +77,8 @@ class VerifyTest < Test::Unit::TestCase
       merchant_name_descriptor: "TRain",
       merchant_location_descriptor: "British Colombia",
       retain_on_success: true,
-      continue_caching: true
+      continue_caching: true,
+      currency_code: "usd"
     }
   end
 
